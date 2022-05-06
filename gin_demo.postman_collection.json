@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "d03e1e58-e4bd-41e1-8b01-3d72062872d2",
+		"name": "gin_demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user_query",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/another_json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"another_json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Shelly\",\r\n    \"password\":\"123456\",\r\n    \"isAdmin\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"insert"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Alicia",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_echo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":5,\r\n    \"username\":\"Bill\",\r\n    \"password\":\"abc\",\r\n    \"isAdmin\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/echo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"echo"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "10",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "Bill",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "111233",
+							"disabled": true
+						},
+						{
+							"key": "isAdmin",
+							"value": "0",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "state_check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"check"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
